@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🎉 Tebak Angka 🔥</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>💥 Tebak Angka!</h1>
+    <p>Coba tebak angka antara <strong>1–100</strong> dan menangkan hadiah!</p>
+
+    <input type="number" id="guessInput" placeholder="Masukkan tebakan..." min="1" max="100">
+    <button onclick="checkGuess()">🔮 Tebak</button>
+
+    <div id="message" class="message"></div>
+    <div id="history" class="history"></div>
+    <div id="attempts" class="attempts"></div> <!-- Tambahkan div untuk menampilkan sisa tebakan -->
+
+    <button id="restartBtn" onclick="startGame()" class="hidden">🎉 Main Lagi</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
