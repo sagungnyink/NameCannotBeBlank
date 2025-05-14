@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Click the Box!</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="game-container">
+    <h1>Click the Box!</h1>
+    <p>Temukan kotak yang bisa diklik dalam waktu terbatas!</p>
+    <div id="game-board" class="game-board">
+      <div class="box" id="box1"></div>
+      <div class="box" id="box2"></div>
+      <div class="box" id="box3"></div>
+      <div class="box" id="box4"></div>
+      <div class="box" id="box5"></div>
+      <div class="box" id="box6"></div>
+      <div class="box" id="box7"></div>
+      <div class="box" id="box8"></div>
+      <div class="box" id="box9"></div>
+    </div>
+    <div id="result" class="result">
+      <p>Waktu tersisa: <span id="timer">10</span> detik</p>
+      <button onclick="restartGame()">Main Lagi</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
